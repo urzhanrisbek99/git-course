@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <link rel="icon" type="image/x-icon" href="/img/svg/logo.svg" />
+    <script src="https://kit.fontawesome.com/a5e715b3bb.js" crossorigin="anonymous"></script>
+    <title>SDU clubs</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile__item">
+                <div class="profile__account">
+                    <div class="navbar">
+                        <div class="logo">
+                            <a target="_self" href="#">SDU clubs</a>
+                            <p>Welcome, <span data-user_name>name</span></p>
+                        </div>
+                        <div class="photo__nav">
+                            <img data-user_image src="" alt="" />
+                        </div>
+                    </div>
+                    <hr class="nav_hr" />
+                    <div class="profile__menu">
+                        <ul class="menu__info">
+                            <li>
+                                <a target="_self" href="/profile.html"><img src="/img/svg/profile.svg"
+                                        alt="" />Profile</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/announce.html"><img src="/img/svg/announce.svg"
+                                        alt="" />Announcement</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/members.html"><img src="/img/svg/members.svg"
+                                        alt="" />Members</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/myclub.html"><img src="/img/svg/myclub.svg" alt="" />My
+                                    Club</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/club.html"><img src="/img/svg/clubs.svg" alt="" />Clubs
+                                    Page</a>
+                            </li>
+                        </ul>
+                        <hr class="nav_hr2" />
+                        <ul class="menu__info--2">
+                            <li>
+                                <a target="_self" data-logout href="/index.html"><img src="/img/svg/quit.svg"
+                                        alt="" />Quit</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="announce__info">
+                    <div class="profile_container">
+                        <div class="info__user">
+                            <img data-user_image src="/img/svg/bigphoto.svg" alt="" />
+                            <div class="info__name">
+                                <h2><span data-user_name>Name</span> <span data-user_surname>Rysbek</span></h2>
+                            </div>
+                            <a href="#" id="profile_edit" class="profile__add-img"><img src="/img/svg/edit.svg"
+                                    alt="" /></a>
+                        </div>
+                        <div class="info__container--name">
+                            <div class="basic__info">
+                                <div class="basic__content">
+                                    <h4>Basic information</h4>
+                                    <ul class="basic__list">
+                                        <li><a href="">Name:</a></li>
+                                        <li><a href="">Surname:</a></li>
+                                        <li><a href="">Phone number:</a></li>
+                                        <li><a href="">Email:</a></li>
+                                    </ul>
+                                    <ul class="basic__list-2">
+                                        <li data-user_name>Name</li>
+                                        <li data-user_surname>Rysbek</li>
+                                        <li data-user_phone>Phone number</li>
+                                        <li data-user_email>Email</li>
+                                    </ul>
+                                </div>
+                                <a href="#" id="basic_edit" class="basic__add--img"><img src="/img/svg/edit.svg"
+                                        alt="" /></a>
+                            </div>
+                            <div class="add__info">
+                                <div class="add__content">
+                                    <h4>Additional info</h4>
+                                    <ul class="add__list">
+                                        <li><a href="">Gender:</a></li>
+                                        <li><a href="">Faculty:</a></li>
+                                        <li><a href="">Year:</a></li>
+                                        <li><a href="">Status:</a></li>
+                                    </ul>
+                                    <ul class="add__list-2">
+                                        <li data-user_gender>Male/Femal</li>
+                                        <li data-user_faculty>_______</li>
+                                        <li data-user_year>1/2/3/4</li>
+                                        <li data-user_type>Student/Head</li>
+                                    </ul>
+                                    <a href="#" id="add_edit" class="add__list--img"><img src="/img/svg/edit.svg"
+                                            alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit_container">
+                        <form class="change_form" id="change_profile">
+                            <div class="avatar_change">
+                                <img src="/img/svg/avatar.svg" id="avatar">
+                                <input type="file" id="photo_file" name="image" accept="image/*">
+                                <label for="photo_file" id="uploadBtn">Choose Photo</label>
+                            </div>
+                            <div class="person_change">
+                                <div class="basic_change">
+                                    <div class="basic_information">
+                                        <p>Basic Information</p>
+                                    </div>
+                                    <div class="basic_container">
+                                        <div class="name-box">
+                                            <label class="name" for="name">Name:</label>
+                                            <input type="text" name="name" id="name" placeholder="Name:">
+                                        </div>
+                                        <div class="surname-box">
+                                            <label class="surname" for="surname">Surname:</label>
+                                            <input type="text" id="surname" name="surname" placeholder="Rysbek">
+                                        </div>
+                                        <div class="phone-change">
+                                            <label class="tel_number" for="tel_number">Phone number:</label>
+                                            <input type="tel" id="tel_number" name="phone" placeholder="Phone number:">
+                                        </div>
+                                        <div class="email-change">
+                                            <label class="email_new" for="email_new">Email:</label>
+                                            <input type="email" id="email_new" name="email" placeholder="Email:">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_change">
+                                    <div class="add_information">
+                                        <p>Basic Information</p>
+                                    </div>
+                                    <div class="add_container">
+                                        <div class="faculty-box">
+                                            <label class="faculty" for="faculty">Faculty:</label>
+                                            <select name="faculty" id="faculty">
+                                                <option value="placeholder" disabled hidden selected>Faculty:</option>
+                                                <option value="business">SDU Business School</option>
+                                                <option value="engineering">Faculty of Engineering and Natural Sciences
+                                                </option>
+                                                <option value="education">Faculty of Education and Humanities Sciences
+                                                </option>
+                                                <option value="law">Faculty of Law and Social Sciences</option>
+                                            </select>
+                                        </div>
+                                        <div class="gender-box">
+                                            <span class="gender_title">Gender:</span>
+                                            <div class="radio">
+                                                <label class="male" for="male">Male</label>
+                                                <input type="radio" name="gender" id="male" value="male">
+                                                <span>/</span>
+                                                <label class="female" for="female">Female</label>
+                                                <input type="radio" name="gender" id="female" value="female">
+                                            </div>
+                                        </div>
+                                        <div class="year-box">
+                                            <span class="gender_title">Year:</span>
+                                            <div class="radio_year">
+                                                <label class="first" for="first">1</label>
+                                                <input type="radio" name="year" id="first" value="1">
+                                                <span class="option_space">/</span>
+                                                <label class="second" for="second">2</label>
+                                                <input type="radio" name="year" id="second" value="2">
+                                                <span class="option_space">/</span>
+                                                <label class="third" for="third">3</label>
+                                                <input type="radio" name="year" id="third" value="3">
+                                                <span class="option_space">/</span>
+                                                <label class="forth" for="forth">4</label>
+                                                <input type="radio" name="year" id="forth" value="4">
+                                            </div>
+                                        </div>
+                                        <div class="status-box">
+                                            <span class="gender_title">Status:</span>
+                                            <div class="status">
+                                                <label class="immortal" for="immortal">Immortal</label>
+                                                <input type="radio" name="type" id="immortal" value="2">
+                                                <span class="option_space">/</span>
+                                                <label class="mortal" for="mortal">Mortal</label>
+                                                <input type="radio" name="type" id="mortal" value="1">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="change_btn">
+                                <a href="" class="change_submit">Cancel</a>
+                                <button class="change_submit" type="submit">Save</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+
+</html>
