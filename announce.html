@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
+    <script src="https://kit.fontawesome.com/a5e715b3bb.js" crossorigin="anonymous"></script>
+    <title>SDU clubs</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="profile__item">
+                <div class="profile__account">
+                    <div class="navbar">
+                        <div class="logo">
+                            <a target="_self" href="#">SDU clubs</a>
+                            <p>Welcome, <span>name</span></p>
+                        </div>
+                        <div class="photo__nav">
+                            <img src="img/avatar.svg" alt="" />
+                        </div>
+                    </div>
+                    <hr class="nav_hr" />
+                    <div class="profile__menu">
+                        <ul class="menu__info">
+                            <li>
+                                <a target="_self" href="/profile.html"><img src="/img/profile.svg" alt="" />Profile</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/announce.html"><img src="/img/announce.svg"
+                                        alt="" />Announcement</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/members.html"><img src="/img/members.svg" alt="" />Members</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/myclub.html"><img src="/img/myclub.svg" alt="" />My
+                                    Club</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/club.html"><img src="/img/clubs.svg" alt="" />Clubs
+                                    Page</a>
+                            </li>
+                        </ul>
+                        <hr class="nav_hr2" />
+                        <ul class="menu__info--2">
+                            <li>
+                                <a target="_self" data-logout href="/index.html"><img src="/img/quit.svg"
+                                        alt="" />Quit</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="announce__info">
+                    <div class="ann_container" id="ann_container">
+                        <div class="ann_p">
+                            <p class="page_title">Announcements</p>
+                            <hr />
+                            <button class="create-btn">Create annoucement</button>
+                        </div>
+                        <div class="ann_board">
+                            <div class="ann_category">
+                                <button class="category_options">All</button>
+                                <button class="category_options1">For heads</button>
+                                <button class="category_options2">For members</button>
+                            </div>
+                            <div class="ann_posts">
+                                <div class="posts_lists">
+                                    <div id="head2" class="samples head2">
+                                        <img class="megaphone" src="/img/megaphone.svg" alt="" />
+                                        <div class="ann_info">
+                                            <p class="event_name">Club Fair</p>
+                                            <ul class="event_info">
+                                                <li class="event_items">Location: Red Hall</li>
+                                                <li class="event_items">From: Coordinator</li>
+                                                <li class="event_items">For: heads</li>
+                                            </ul>
+                                        </div>
+                                        <p class="event_date">11.02.2022 FRIDAY</p>
+                                    </div>
+                                    <div class="samples" id="member">
+                                        <img class="megaphone" src="/img/megaphone.svg" alt="" />
+                                        <div class="ann_info">
+                                            <p class="event_name">Meeting</p>
+                                            <ul class="event_info">
+                                                <li class="event_items">Location: F304</li>
+                                                <li class="event_items">From: "Head" of "Club"</li>
+                                                <li class="event_items item3">For: "Club" members</li>
+                                            </ul>
+                                        </div>
+                                        <p class="event_date">22.02.2022 TUESDAY</p>
+                                    </div>
+                                    <div class="samples head1" id="head1">
+                                        <img class="megaphone" src="/img/megaphone.svg" alt="" />
+                                        <div class="ann_info">
+                                            <p class="event_name">Meeting for Heads</p>
+                                            <ul class="event_info">
+                                                <li class="event_items">Location: F304</li>
+                                                <li class="event_items">From: Coordinator</li>
+                                                <li class="event_items">For: Heads</li>
+                                            </ul>
+                                        </div>
+                                        <p class="event_date">05.03.2022 thursday</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="create_container" id="create_container">
+                        <div class="create_def">
+                            <h2 class="ann_h2">Create a New Announcements</h2>
+                            <hr class="ann_hr" />
+                            <p class="page_def">
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt mollit anim id est laborum."
+                            </p>
+                        </div>
+                        <div class="create_board">
+                            <div class="create_info">
+                                <form class="create-form" id="create_posts" action="/">
+                                    <div class="title-box">
+                                        <label class="title" for="title">Title</label>
+                                        <input type="text" id="title" name="name" required
+                                            placeholder="Example: Meeting" />
+                                    </div>
+                                    <div class="location-box">
+                                        <label class="location" for="location">Location</label>
+                                        <input type="text" id="location" name="location" required
+                                            placeholder="Example: F 302" />
+                                    </div>
+                                    <div class="date-box">
+                                        <label class="date" for="date">Date</label>
+                                        <input type="date" id="date" name="date" required
+                                            placeholder="Example: 12.02.2022" />
+                                    </div>
+                                    <div class="create_options">
+                                        <div class="priority">
+                                            <p class="options_p">Priority</p>
+                                            <ul class="priority_list">
+                                                <li class="priority_item">
+                                                    <label class="radio1" for="radiobutton1">LOW</label>
+                                                    <input type="radio" id="radiobutton1" name="priority" value="low" />
+                                                </li>
+                                                <li class="priority_item">
+                                                    <label class="radio2" for="radiobutton2">MEDIUM</label>
+                                                    <input type="radio" id="radiobutton2" name="priority"
+                                                        value="medium" />
+                                                </li>
+                                                <li class="priority_item">
+                                                    <label class="radio3" for="radiobutton3">HIGH</label>
+                                                    <input type="radio" id="radiobutton3" name="priority"
+                                                        value="high" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="for_who">
+                                            <p class="for_p">For</p>
+                                            <ul class="for_list">
+                                                <li class="for_item">
+                                                    <label class="radio4" for="radiobutton4">All</label>
+                                                    <input type="radio" id="radiobutton4" name="for" value="all" />
+                                                </li>
+                                                <li class="for_item">
+                                                    <label class="radio5" for="radiobutton5">Heads</label>
+                                                    <input type="radio" id="radiobutton5" name="for" value="heads" />
+                                                </li>
+                                                <li class="for_item">
+                                                    <label class="radio6" for="radiobutton6">Members</label>
+                                                    <input type="radio" id="radiobutton6" name="for" value="members" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="post_buttons">
+                                        <a href="" id="post_submit" class="post_submit1">Cancel</a>
+                                        <a href="" class="post_submit" type="submit">Save</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <script src="/js/announce.js"></script>
+</body>
+
+</html>

@@ -618,7 +618,7 @@ input::placeholder {
   background: #6e8bf5;
   border: none;
   border-radius: 40px;
-  padding: 28px 68px 28px 69px;
+  /* padding: 28px 68px 28px 69px; */
   margin-top: 13px;
   font-family: Lato;
   font-weight: 700;
@@ -629,6 +629,9 @@ input::placeholder {
   display: flex;
   align-items: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ann_board {
   width: 100%;
@@ -648,7 +651,9 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
-.category_options {
+.category_options,
+.category_options1,
+.category_options2 {
   text-decoration: none;
   color: black;
   width: 212px;
@@ -660,19 +665,22 @@ input::placeholder {
   margin-left: 4px;
   cursor: pointer;
   user-select: none;
+  border: none;
 }
 .category_options:first-child {
   padding: 15px 95px 15px 95px;
   border-radius: 20px 0px 0px 0px;
 }
-.category_options:nth-of-type(2) {
+.category_options1 {
   padding: 15px 67px 15px 67px;
 }
-.category_options:last-child {
+.category_options2 {
   padding: 15px 53px 15px 54px;
   border-radius: 0px 20px 0px 0px;
 }
 .category_options:hover,
+.category_options1:hover,
+.category_options2:hover,
 .category_options:active {
   background-color: #6e8bf5;
   color: white;
@@ -701,6 +709,7 @@ input::placeholder {
   display: flex;
   align-items: center;
 }
+
 .samples:hover,
 .samples:active {
   background-color: #6e8bf5;
