@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/test.css" />
+    <link rel="icon" type="image/x-icon" href="./img/svg/logo.svg" />
+    <script src="https://kit.fontawesome.com/a5e715b3bb.js" crossorigin="anonymous"></script>
+    <title>SDU clubs</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <div class="burger-menu">
+                    <div id="burger-icon" onclick="onClickMenu()">
+                        <div id="line1" class="menu-bar"></div>
+                        <div id="line2" class="menu-bar"></div>
+                        <div id="line3" class="menu-bar"></div>
+                    </div>
+                    <ul class="burger-nav" id="burger-nav">
+                        <li class="burger_item">
+                            <a class="burger_link" href="#">Home pageee</a>
+                        </li>
+                        <li class="burger_item">
+                            <a class="burger_link" href="#">Clubs</a>
+                        </li>
+                        <li class="burger_item">
+                            <a class="burger_link" href="#">Contacts</a>
+                        </li>
+                        <li class="burger_item">
+                            <a class="burger_link" href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="burger-bg" id="burger-bg"></div>
+                <div class="menu">
+                    <a class="menu__logo" href="">SDU clubs</a>
+                    <nav class="nav_header">
+                        <ul class="header_list" id="#navbar_list">
+                            <li class="list__item"><a href="#navbar_list">Home page</a></li>
+                            <li class="list__item"><a href="#clubs">Clubs</a></li>
+                            <li class="list__item"><a href="#footer">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_buttons">
+                    <button class="buttons__item login-btn">Log In</button>
+                    <button class="buttons__item signup-btn">Sign Up</button>
+                </div>
+            </div>
+    </header>
+    <section class="popup">
+        <div class="login-pop" id="login-pop">
+            <form class="login-form" id="login-form">
+                <h2 class="form-h2">Login</h2>
+                <div class="email-box">
+                    <label class="email" for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="username@gmail.com" size="10">
+                </div>
+                <div class="password-box">
+                    <label class="password" for="password">Password</label>
+                    <div class="eyes">
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                        <span class="eye" onclick="hidePassword()">
+                            <i id="hide" class="fas fa-eye-slash"></i>
+                            <i id="show" class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                    <a class="lost_pass" href="#">Forgot Password??</a>
+                </div>
+                <button type="submit" class="signin">Sign In</button>
+                <p class="log_p">or continue with</p>
+                <a class="google" href="#"><img class="google-photo" src="/img/svg/google.svg" alt=""></a>
+                <p class="log_p">Don't have an account yet? <a id="register" href="#">Register for free</a></p>
+            </form>
+        </div>
+        <div class="signup-pop" id="signup-pop">
+            <form class="signup-form" id="signup-form">
+                <h2 class="form-h2">Sign Up</h2>
+                <div class="username-box">
+                    <label class="username" for="username">Username</label>
+                    <input type="text" id="username" name="name" placeholder="username" required>
+                </div>
+                <div class="tel-box">
+                    <label class="tel" for="tel">Phone number</label>
+                    <input type="tel" id="tel" name="phone" placeholder="+7(***)-***-****" required>
+                </div>
+                <div class="regemail-box">
+                    <label class="email" for="email1">Email</label>
+                    <input type="email" id="email1" name="email" required placeholder="username@gmail.com" size="10">
+                </div>
+                <div class="regpassword-box">
+                    <label class="regpassword" for="regpassword">Password</label>
+                    <div class="eyes">
+                        <input type="regpassword" id="regpassword" name="password" required placeholder="Password">
+                        <span class="eye" onclick="hidePassword1()">
+                            <i id="reghide" class="fas fa-eye-slash"></i>
+                            <i id="regshow" class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                <button type="submit" class="signup">Sign Up</button>
+                <p class="signup_p">Already have an account? <a id="signin" href="#">Sign in</a></p>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="intro" id="intro">
+        <div class="wrapper">
+            <div class="section--intro">
+                <div class="pic1">
+                    <img src="./img/svg/character 19 1.svg" alt="" />
+                </div>
+                <div class="intro__suptitle">
+                    <div class="draw">
+                        <img class="rec1" src="./img/svg/Rectangle 3.svg" alt="" />
+                        <h3>We will help to find your hobby</h3>
+                        <img class="rec2" src="/img/svg/Rectangle 5.svg" alt="" />
+                    </div>
+
+                    <h1>Don't miss your students year</h1>
+                    <a href="#clubs" class="btn">List of Clubs</a>
+                </div>
+                <div class="pic2">
+                    <img src="./img/svg/clip-reading-books 1.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clubs" id="clubs">
+        <div class="wrapper">
+            <h2>Clubs</h2>
+            <hr />
+            <div class="clubs__container">
+                <div class="clubs_logo" id="logo">
+                    <div class="line line1" id="line">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line2">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line3">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line4">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line3">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line4">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line3">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line line4">
+                        <ul class="clubs_lists">
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="logo">
+                                    <img class="zhasa" src="./img/zhasa_logo 1.jpg" alt="" />
+                                    <h3 class="clubs_name">Zhasa club</h3>
+                                    <h4 class="clubs_def">Photo,video,design</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="app" id="app">
+        <div class="wrapper">
+            <h2>App</h2>
+            <hr />
+            <img class="app_photo" src="./img/Снимок.PNG" alt="" />
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer_container">
+            <div class="footer_box">
+                <div class="footer-col">
+                    <h4 class="footer_nav">SDU clubs</h4>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="items_links" href="#">Info</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links" href="#">Home Page</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links" href="#">Clubs</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a class="items_links" href="#">Contacts</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links item1" href="#"><img class="icons" src="./img/svg/Vectorphone.svg"
+                                    alt="" />+7(***)-***-****</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links item1" href="#"><img class="icons" src="./img/svg/Vectormail.svg"
+                                    alt="" />coordinator@email.com</a>
+                        </li>
+                        <li class="footer_item">
+                            <a class="items_links item1" href="#"><img class="icons" src="./img/svg/Vectorplace.svg"
+                                    alt="" />100000,
+                                Kazakhstan,<br />Kaskelen, st.Abylaikhan 1/1
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="social_media">
+                        <a class="social_links" href="#"><img src="./img/svg/Shapefacebook.svg" alt="" /></a>
+                        <a class="social_links" href="#"><img src="./img/svg/Shapetwitter.svg" alt="" /></a>
+                        <a class="social_links" href="#"><img src="./img/svg/shapeinsta.svg" alt="" /></a>
+                        <a class="social_links" href="#"><img src="./img/svg/Shapepint.svg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="rights_hr" />
+            <p class="rights">© 2020 Digital Project. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/test.js" defer></script>
+</body>
+
+</html>
