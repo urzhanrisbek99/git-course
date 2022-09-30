@@ -10,26 +10,26 @@ ann.onclick = function () {
   sample.style.display = "block";
 };
 
-var all = document.getElementsByClassName("category_options")[0];
-var head = document.getElementsByClassName("category_options1")[0];
-var member = document.getElementsByClassName("category_options2")[0];
+var all = document.querySelectorAll(".category_options")[0];
+var head = document.querySelectorAll(".category_options1")[0];
+var member = document.querySelectorAll(".category_options2")[0];
 
-var main = document.querySelector("#head2");
-var main1 = document.querySelector("#head1");
-var student = document.querySelector("#member");
+var main = document.getElementById("head2");
+var main1 = document.getElementById("head1");
+var student = document.getElementById("member");
 all.onclick = function () {
-  student.style.display = "block";
-  main.style.display = "block";
-  main1.style.display = "block";
+  main.style.display = "flex";
+  main1.style.display = "flex";
+  student.style.display = "flex";
 };
 
 head.onclick = function () {
   student.style.display = "none";
-  main.style.display = "block";
-  main1.style.display = "block";
+  main.style.display = "flex";
+  main1.style.display = "flex";
 };
 member.onclick = function () {
-  student.style.display = "block";
+  student.style.display = "flex";
   main.style.display = "none";
   main1.style.display = "none";
 };
