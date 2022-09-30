@@ -1148,18 +1148,33 @@ input::placeholder {
   font-weight: 700;
   font-size: 18px;
 }
-.edit {
+/* .edit {
   margin: 20px 0px 0 93px;
   width: 30px;
   height: 30px;
-}
+} */
 .acc_deny {
   width: 82px;
   height: 30px;
   display: flex;
   justify-content: space-between;
-  margin-top: 18px;
-  margin-left: 41px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.yes,
+.no {
+  opacity: 0.7;
+}
+.yes:hover {
+  background-color: white;
+  border-radius: 50%;
+  color: white;
+  opacity: 1;
+}
+.no:hover {
+  background-color: red;
+  border-radius: 50%;
+  opacity: 1;
 }
 .myclub_container,
 .club_container {
