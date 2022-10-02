@@ -213,13 +213,13 @@ body {
   height: 100%;
 }
 .profile__add-img img {
-  margin: 0;
-  width: 24px;
-  height: 24px;
+  width: 27px;
+  height: 27px;
   color: #000000;
-  margin-top: 36px;
+  margin-top: 25px;
   margin-left: 65px;
   border-radius: 0;
+  margin-left: 110px;
 }
 .info__container--name {
   display: flex;
@@ -992,6 +992,7 @@ input::placeholder {
   margin-top: 13px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 .searсh_place {
   width: 1020px;
@@ -1026,7 +1027,7 @@ input::placeholder {
   align-items: center;
   background-color: white;
   justify-content: center;
-  margin-left: 25px;
+  margin-left: 8px;
 }
 .a-z li {
   font-family: Poppins;
@@ -1043,11 +1044,17 @@ input::placeholder {
   border-radius: 12px;
   border: none;
   background-color: black;
-  margin-left: 23px;
+  margin-left: 45px;
   color: white;
   font-family: Poppins;
   font-weight: 500;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_btn:last-child {
+  margin-left: 10px;
 }
 .member_board,
 .member_board1 {
@@ -1110,14 +1117,18 @@ input::placeholder {
 .mem_lists::-webkit-scrollbar {
   display: none;
 }
+
 .mem_info,
 .mem_info1 {
-  width: 42.77%;
+  width: 48%;
   height: 130px;
   border-radius: 40px;
   background-color: white;
   display: flex;
   margin-top: 52px;
+}
+.mem_lists .mem_info {
+  width: 43%;
 }
 .mem_info:hover,
 .mem_info1:hover {
@@ -1210,7 +1221,7 @@ input::placeholder {
   width: 300px;
   min-height: 360px;
   border-radius: 20px;
-  background-color: white;
+  background-color: #f4f5fb;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin-top: 50px;
   display: flex;
@@ -1295,7 +1306,7 @@ input::placeholder {
   /* text-align: center; */
 }
 .intro_quit {
-  background-image: url("../img/svg/zhasaback.svg");
+  background-image: url("../img/zhasaback.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1356,6 +1367,11 @@ input::placeholder {
   border: none;
   background-color: #6e8bf5;
   color: white;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
 .myclub_membership,
 .club_membership {
@@ -1367,6 +1383,12 @@ input::placeholder {
 .myclub_membership .search-box,
 .club_membership .search-box {
   margin-top: 0px;
+}
+.search-box .searсh_place {
+  width: 950px;
+}
+.mem_container .search-box .searсh_place {
+  width: 1020px;
 }
 .member_board2 {
   margin-top: 47px;
@@ -1420,6 +1442,9 @@ input::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 21.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .myclubchange_btn:first-child {
   background-color: white;
