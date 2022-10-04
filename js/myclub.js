@@ -8,10 +8,14 @@ const file = document.querySelector("#myclubphoto_file");
 var mems = document.querySelector(".myclub_membership");
 var new_cancel = document.getElementById("cancel_change");
 
-myclub_card.onclick = function () {
+// myclub_card.onclick = function () {
+//   all.style.display = "none";
+//   news.style.display = "block";
+// };
+function OpenMyClub() {
   all.style.display = "none";
   news.style.display = "block";
-};
+}
 edit_club.onclick = function () {
   news.style.display = "none";
   change_club.style.display = "block";
@@ -36,13 +40,6 @@ file.addEventListener("change", function () {
     reader.readAsDataURL(choosedFile);
   }
 });
-// function mem_lis() {
-//   if (mems.style.display === "none") {
-//     mems.style.display = "block";
-//   } else {
-//     mems.style.display = "none";
-//   }
-// }
 
 var list = document.querySelector(".memlist_btn");
 var showList = document.querySelector(".myclub_membership");

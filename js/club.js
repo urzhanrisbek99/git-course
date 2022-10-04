@@ -1,10 +1,15 @@
 var all = document.querySelector(".myclub_item");
 var news = document.querySelector(".club_container");
 var mems = document.getElementsByClassName("club_info")[0];
-all.onclick = function () {
+// all.onclick = function () {
+//   news.style.display = "none";
+//   mems.style.display = "block";
+// };
+
+function OpenCards() {
   news.style.display = "none";
   mems.style.display = "block";
-};
+}
 var list = document.querySelector(".memlist_btn");
 var showList = document.querySelector(".club_membership");
 

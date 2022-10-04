@@ -27,9 +27,9 @@
                         </div>
                     </div>
                     <hr class="nav_hr" />
-                    <div class="profile__menu">
-                        <ul class="menu__info">
-                            <li>
+                    <div class="profile__menu" id="profile__menu">
+                        <ul class="menu__info" id="menu__info">
+                            <li class="active">
                                 <a target="_self" href="./profile.html"><img src="./img/profile.svg"
                                         alt="" />Profile</a>
                             </li>
@@ -58,7 +58,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="announce__info">
+                <div class="announce__info try">
                     <div class="profile_container">
                         <div class="info__user">
                             <img src="./img/bigphoto.svg" alt="" />
@@ -160,7 +160,7 @@
                                         <div class="gender-box">
                                             <span class="gender_title">Gender:</span>
                                             <div class="radio">
-                                                <label class="male" for="male">Male</label>
+                                                <label class="male act" for="male">Male</label>
                                                 <input type="radio" name="gender" id="male" value="male">
                                                 <span>/</span>
                                                 <label class="female" for="female">Female</label>
@@ -170,7 +170,7 @@
                                         <div class="year-box">
                                             <span class="gender_title">Year:</span>
                                             <div class="radio_year">
-                                                <label class="first" for="first">1</label>
+                                                <label class="first act" for="first">1</label>
                                                 <input type="radio" name="year" id="first" value="1">
                                                 <span class="option_space">/</span>
                                                 <label class="second" for="second">2</label>
@@ -186,7 +186,7 @@
                                         <div class="status-box">
                                             <span class="gender_title">Status:</span>
                                             <div class="status">
-                                                <label class="immortal" for="immortal">Immortal</label>
+                                                <label class="immortal act" for="immortal">Immortal</label>
                                                 <input type="radio" name="type" id="immortal" value="2">
                                                 <span class="option_space">/</span>
                                                 <label class="mortal" for="mortal">Mortal</label>
@@ -209,6 +209,12 @@
         </div>
         </div>
     </header>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', 'div label', function () {
+            $(this).addClass('act').siblings().removeClass('act')
+        })
+    </script>
     <script src="./js/profile.js"></script>
 </body>
 

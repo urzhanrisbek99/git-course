@@ -27,13 +27,13 @@
                         </div>
                     </div>
                     <hr class="nav_hr" />
-                    <div class="profile__menu">
+                    <div class="profile__menu" id="profile__menu">
                         <ul class="menu__info">
                             <li>
                                 <a target="_self" href="./profile.html"><img src="./img/profile.svg"
                                         alt="" />Profile</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a target="_self" href="./announce.html"><img src="./img/announce.svg"
                                         alt="" />Announcement</a>
                             </li>
@@ -53,13 +53,12 @@
                         <hr class="nav_hr2" />
                         <ul class="menu__info--2">
                             <li>
-                                <a target="_self" data-logout href="./index.html"><img src="./img/quit.svg"
-                                        alt="" />Quit</a>
+                                <a target="_self" href="./index.html"><img src="./img/quit.svg" alt="" />Quit</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="announce__info">
+                <div class="announce__info try">
                     <div class="ann_container" id="ann_container">
                         <div class="ann_p">
                             <p class="page_title">Announcements</p>
@@ -68,7 +67,7 @@
                         </div>
                         <div class="ann_board">
                             <div class="ann_category">
-                                <button class="category_options">All</button>
+                                <button class="category_options category_act">All</button>
                                 <button class="category_options1">For heads</button>
                                 <button class="category_options2">For members</button>
                             </div>
@@ -130,7 +129,7 @@
                         </div>
                         <div class="create_board">
                             <div class="create_info">
-                                <form class="create-form" id="create_posts" action="/">
+                                <form class="create-form" id="create_posts">
                                     <div class="title-box">
                                         <label class="title" for="title">Title</label>
                                         <input type="text" id="title" name="name" required
@@ -150,8 +149,8 @@
                                         <div class="priority">
                                             <p class="options_p">Priority</p>
                                             <ul class="priority_list">
-                                                <li class="priority_item">
-                                                    <label class="radio1" for="radiobutton1">LOW</label>
+                                                <li class="priority_item buttons_act">
+                                                    <label class="radio1 " for="radiobutton1">LOW</label>
                                                     <input type="radio" id="radiobutton1" name="priority" value="low" />
                                                 </li>
                                                 <li class="priority_item">
@@ -169,7 +168,7 @@
                                         <div class="for_who">
                                             <p class="for_p">For</p>
                                             <ul class="for_list">
-                                                <li class="for_item">
+                                                <li class="for_item buttons_act">
                                                     <label class="radio4" for="radiobutton4">All</label>
                                                     <input type="radio" id="radiobutton4" name="for" value="all" />
                                                 </li>
@@ -198,7 +197,18 @@
             </div>
         </div>
     </header>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).on('click', '.priority_list .priority_item', function () {
+            $(this).addClass('buttons_act').siblings().removeClass('buttons_act')
+        })
+        $(document).on('click', '.for_list .for_item', function () {
+            $(this).addClass('buttons_act').siblings().removeClass('buttons_act')
+        })
+        $(document).on('click', 'div button', function () {
+            $(this).addClass('category_act').siblings().removeClass('category_act')
+        })
+    </script>
     <script src="./js/announce.js"></script>
 </body>
 
